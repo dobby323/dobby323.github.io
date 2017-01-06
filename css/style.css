@@ -5,7 +5,11 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
-@font-face { font-family: 'MyriadSetPro-Thin';  src: local('MyriadSetPro-Thin'), url('http://nomail.com.ua/files/woff/356be893126adc07376152f231a5074e.woff') format('woff'); }
+@font-face { 
+    font-family: 'MyriadSetPro-Thin';
+    src:  url(../fonts/myriad-set-pro-thin.ttf); 
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
