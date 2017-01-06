@@ -1,0 +1,1006 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@font-face { font-family: 'MyriadSetPro-Thin';  src: local('MyriadSetPro-Thin'), url('http://nomail.com.ua/files/woff/356be893126adc07376152f231a5074e.woff') format('woff'); }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.hidden {
+    display: none;
+}
+button {
+    outline: none ;
+}
+
+/* НАЧАЛО */
+body {
+    color: azure;
+}
+#header {
+    display: block;
+    position: relative;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: auto;
+}
+/*------------------------------
+            МЕНЮ 
+-------------------------------*/
+.mnu-line {
+    padding: 10px 0;
+    background-color: rgba(169, 169, 169, 0.40);
+}
+.logo {
+    padding-left: 10px;
+}
+.logo img {
+    width: 40px;
+}
+.main-nav li {
+    display: inline-block;
+    padding-top: 7px;
+}
+.main-nav {
+    padding-top: 3px;
+    margin: auto;
+    text-align: center;
+}
+.main-nav a {
+    display: block;
+    padding: 0px 18px;
+    color: black;
+    font-family: "Open Sans Condensed";
+    font-size: 22px;
+    text-decoration: none;
+}
+.main-nav a:hover {
+    text-decoration: none;
+    color: aqua;
+    transition: all 0.4s ease;
+}
+/*-----------------------------
+        МЕНЮ ДЛЯ ТЕЛЕФОНОВ
+------------------------------*/
+.hidden-mnu {
+    background-color: rgba(169, 169, 169, 0.40);
+    display: none;
+}
+.hidden-mnu li {
+    padding: 5px;
+    text-align: center;
+}
+.hidden-mnu a {
+    font-family: "Open Sans Condensed";
+    color: black;
+    font-size: 23px;
+    text-decoration: none;
+}
+.hidden-mnu a:hover {
+    color: aqua;
+    transition: all 0.4s ease;
+}
+
+/* --------------------------
+            ТЕЛЕФОН 
+----------------------------*/
+.phone-wrap {
+    font-family: "Open Sans Condensed";
+    color: black;
+    font-size: 20px;
+}
+.fa-mobile {
+    color: black;
+}
+
+.phone {
+    text-align: right;
+    line-height: 22px;
+}
+/* ------------------------------------
+            ОБРАТНЫЙ ЗВОНОК 
+-------------------------------------*/
+.phone a {
+    text-decoration: none;
+    color: #21b7b7;
+    font-family: "Open Sans Condensed";
+    font-size: 17px;
+}
+.phone a:hover {
+    color: aqua;
+    transition: all 0.5s ease;
+}
+/* -------------------------
+        КАРТИНКА ХЭДЕРА 
+---------------------------*/
+.iphone-main-img {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.iphone-main-img img {
+    width: 100%;
+}
+.header-content {
+    padding-top: 12% 
+}
+
+/* ---------------------------
+        ТЕКСТ ХЭДЕРА 
+-----------------------------*/
+
+.header-content h1 {
+    font-size: 70px;
+    text-align: center;
+    font-family: "MyriadSetPro-Thin";
+    color: aqua;
+    margin-top: 10%;
+    line-height: 40px;
+}
+.header-content h1 span {
+    font-size: 30px;
+}
+.header-content p {
+    text-align: center;
+    font-family: "Open Sans Condensed";
+    font-size: 25px;
+    margin-top: 4%;
+    margin-bottom: 6%;
+    color: #006969;
+}
+.header-content p span {
+    font-size: 50px;
+    color: aqua;
+}
+/*------------------------------
+        КНОПКА ЗАКАЗА
+-------------------------------*/
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: aqua;
+    background-color: rgba(255, 13, 13, 0.85);
+    font-family: "Open Sans Condensed";
+    font-size: 40px;
+    padding: 5px 35px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #ffffff;
+    margin-bottom: 10%;
+}
+.button:hover {
+    text-decoration: none;
+    color: aqua;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+.button:active {
+    text-decoration: none;
+    color: aqua;
+    transform: translateY(2px)
+}
+.button:focus {
+    text-decoration: none;
+    color: aqua;
+}
+.button-position {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/*-----------------------------------
+КНОПКА ВЫПАДАЮЩЕЕ МЕНЮ (toggle-menu)
+-----------------------------------*/
+
+.toggle-mnu {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-top: 14px;
+}
+.toggle-mnu span:after, .toggle-mnu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+.toggle-mnu span:after {
+  top: 18px;
+}
+.toggle-mnu span {
+  position: relative;
+  display: block;
+}
+.toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+.toggle-mnu.on span {
+  background-color: transparent;
+}
+.toggle-mnu.on span:before {
+  transform: rotate(45deg) translate(-1px, 0px);
+}
+.toggle-mnu.on span:after {
+  transform: rotate(-45deg) translate(6px, -7px);
+}
+.toggle-mnu {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+
+/*--------------------------------
+            вкладка "О НАС" 
+---------------------------------*/
+
+#about {
+    padding-bottom: 70px;
+    background-color: black;
+}
+.delivery {
+    display: block;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: -5%;
+}
+.delivery img {
+    width: 50%;
+}
+.usa {
+    display: block;
+    text-align: center;
+    margin-top: -5%;
+    margin-bottom: 4.5%;
+    
+}
+.usa img {
+    width: 34%;
+}
+.sale {
+    display: block;
+    text-align: center;
+    margin-top: -5%;
+    margin-bottom: 4.5%;
+}
+.sale img {
+    width: 15%;
+}
+.garant {
+    display: block;
+    text-align: center;
+    margin-top: -4%;
+    margin-bottom: 3%;
+
+}
+.garant img {
+    width: 30%;
+}
+#about p {
+    text-align: center;
+    font-family: "Open Sans Condensed";
+    font-size: 25px;
+    color: aqua;
+}
+
+/*--------------------------------------
+            ЗАГОЛОВОК ВКАДКИ
+----------------------------------------*/
+
+.discribe {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 0 -15px;
+    margin-bottom: 5%;
+    background-color: rgba(169, 169, 169, 0.40);
+}
+.discribe h2 {
+    font-family: "Open Sans Condensed";
+    font-size: 35px;
+    color: aqua;
+}
+
+/*-------------------------------------
+        ВКЛАДКА ХАРАКТЕРИСТИКИ
+--------------------------------------*/
+
+#characteristic {
+    background-color: black;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    font-family: "MyriadSetPro-Thin";
+}
+.characteristic-header {
+    text-align: center;
+    font-size: 45px;
+    color: aqua;
+    margin-top: -20px;
+    margin-bottom: 5%;
+}
+.section-characteristic {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: 1px solid red;
+}
+.p-capasity {
+    font-size: 30px;
+    text-align: center;
+    word-spacing: 30px;
+    color: #fff;
+    font-variant: small-caps;
+}
+.color-characteristic {
+    color: #eaea00;
+    text-align: left;
+    padding-left: 5%;
+    margin-top: 0;
+    font-size: 45px;
+    margin-bottom: 5%;
+}
+.picture-size {
+    display: block;
+    width: 400px;
+    height: 270px;
+    background-image: url(../imeg/characteristik/dimensions.png);
+    background-size: cover;
+}
+.size {
+    font-size: 16px;
+}
+.size-a {
+    display: inline-block;
+    position: absolute;
+    padding-left: 75px;
+    padding-top: 60px;
+}
+.size-b {
+    display: inline-block;
+    position: absolute;
+    padding-left: 340px;
+    top: 27px;
+}
+.size-c {
+    display: inline-block;
+    position: absolute;
+    bottom: 60px;
+    padding-left: 280px;
+}
+.weight {
+    padding-top: 12px;
+    font-size: 20px;
+}
+.display-img {
+    padding-top: 6%;
+    display: block;
+    text-align: center;
+}
+.display-character {
+    padding-top: 12px;
+}
+.display-character ul li {
+    margin-bottom: 20px;
+    word-spacing: 3px;
+    font-size: 20px;
+}
+.camera-img {
+    display: block;
+}
+.camera-img img {
+    width: 100%;
+}
+.camera {
+    padding-bottom: 0%;
+}
+/*-----------------------
+           SALE
+-------------------------*/
+#sale {
+    background-color: black;
+    font-family: "MyriadSetPro-Thin";
+    padding-bottom: 25px;
+}
+#sale .button-position {
+    margin-top: 45px;
+}
+.powerbank-text {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.powerbank-text span {
+    font-size: 40px;
+    color: yellow;
+}
+.powerbank-img {
+    display: block; 
+    text-align: center;
+}
+.powerbank-img img {
+    width: 40%;
+}
+/*------------------------
+         galery
+-------------------------*/
+#galery {
+    background-color: gold;
+}
+#galery .discribe {
+    margin-bottom: 0;
+    background-color: rgb(56, 56, 56);
+}
+#galery .col-md-4{
+    padding: 0;
+}
+.galery-img {
+    position: relative;
+    padding: 3px;
+    display: block;
+    overflow: hidden;
+}
+.galery-img img {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.galery-img:hover img {
+    transform: scale(1.1);
+}
+.galery-img-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 25%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    opacity: 0;
+    transform: scale(1.3);
+    transition: all 0.5s ease;
+}
+.galery-img-content i {
+    color: gold;
+    font-size: 35px;
+    
+}
+.galery-img-content:hover {
+    opacity: 1;
+    text-decoration: none;
+    transform: scale(0.9);
+}
+/* ----------------------------
+         ПОПАП (галерея)
+------------------------------*/
+.galery-popup {
+    display: block;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 80%;
+    margin: 1% auto;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.galery-popup img {
+    width: 80%;
+}
+
+.galery-popup h2 {
+    font-size: 25px;
+    font-family: "MyriadSetPro-Thin";
+    color: black;
+}
+/*---------------------------------------
+                КАК МЫ РАБОТАЕМ
+-----------------------------------------*/
+#work {
+    background-color: #000;
+    font-family: "MyriadSetPro-Thin";
+    color: aqua;
+}
+.work-img {
+    text-align: center;
+}
+.work-img img {
+    width: 50%;
+}
+.work-text {
+    line-height: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+/*---------------------------------------
+                ОТЗЫВЫ
+---------------------------------------*/
+#comment {
+    background-color: black;
+    font-family: "MyriadSetPro-Thin";
+    color: aqua;
+}
+.comment-item {
+    text-align: center;
+}
+.comment-item h4 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.comment-img {
+    margin: 0 auto;
+    border-radius: 10em;
+    border: white 4px solid;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    box-shadow: rgba(145, 145, 145, 0.76) 0 0 10px;
+    
+}
+.comment-img img {
+    width: 110%;
+}
+.triangle-up {
+    margin: 0 auto;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #211b1b;
+}
+
+.comment-desc {
+    color: #F7F7F7;
+    margin-bottom: 50px;
+    background-color: #211b1b;
+    padding: 25px;
+    padding-bottom: 20px;
+    border-radius: 3px;
+    min-height: 230px;
+}
+.comment-desc h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.comment-desc p {
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 17px;
+}
+/*------------------------------------------
+                ФОРМА ЗАКАЗА
+--------------------------------------------*/
+.contact-form {
+    font-family: "MyriadSetPro-Thin";
+    background-color: #d8d8d8;
+    color: #000;
+    padding: 25px;
+    margin-bottom: 50px;
+    border-radius: 2px;
+    box-shadow: rgba(145, 145, 145, 0.6) 0 0 5px
+}
+
+.contact-form-header h4 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.contact-form-header p {
+    text-align: center;
+    color: #484848;
+    line-height: 20px;
+    font-size: 16px;
+    margin: 13px 0;
+    margin-bottom: 20px;
+}
+/*растояние межу лейбами*/
+form label {
+    margin-bottom: 12px;
+    display: block;
+}
+/*настройка подписей полей*/
+form label span {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 17px;
+    color: #484848;
+}
+/*настройка полей для заполнения*/
+form label input, select {
+    background-color: rgba(255, 255, 255,.7);
+    border-radius: 2px;
+    border: none;
+    padding: 0px 11px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    display: block;
+    color: black;
+    font-size: 23px;
+    width: 100%;
+}
+/*настройка кнопки "отправить"*/
+.button-form {
+    margin-top: 10px;
+    color: aqua;
+    font-size: 23px;
+    padding: 10px 30px;
+    border: none;
+    background-color: red;
+    box-shadow: #de0000 0 3px 0;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+.button-form:hover {
+    background-color: #ff2c12;
+}
+.button-form:active {
+    background-color: #de0000;
+    transform: translateY(2px);
+    text-decoration: none;
+}
+.button-form:focus {
+    text-decoration: none;
+}
+/*---------------------------------------------
+                    FOOTER
+----------------------------------------------*/
+#main-footer .mnu-line {
+    padding: 30px 0;
+    background-color: #211b1b;
+}
+#main-footer .main-nav a {
+    color: #F7F7F7;
+}
+#main-footer .main-nav a:hover {
+    text-decoration: none;
+    color: #868686;
+    transition: all 0.4s ease;
+}
+#main-footer .phone-wrap {
+    color: #F7F7F7;
+}
+#main-footer .fa-mobile {
+    color: #f7f7f7;
+}
+
+
+
+/*---------------------------------------
+        Всплывающая форма заказа 
+----------------------------------------*/
+#callback, #callback-phone {
+    display: block;
+    position: relative;
+}
+/*------- animation------*/
+
+.form-callback {
+    overflow: hidden;
+    max-width: 320px;
+    margin: auto;
+    box-shadow:#fff 0 0 4px;
+    
+}
+.form-callback h4 {
+    font-size: 35px;
+}
+/*--------------------------------------------------
+        Всплівающее окно успешно отправки
+---------------------------------------------------*/
+.succes {
+    background-color: #1d1d1d;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.succes p {
+    color: #fff;
+    margin: auto;
+    font-size: 20px;
+    line-height: 25px;
+}
+.succes .active {
+    left: 0;
+    opacity: 1;
+}
+/*---------------------------------
+            Кнопка "НАВЕРХ"
+----------------------------------*/
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 10em;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.top:hover {
+    opacity: 1;
+    background-color: goldenrod;
+}
+.top .fa {
+    margin-top: 8px;
+    font-size: 23px;
+    color: #000;
+}
+
+/*-----------------------------------------------
+            ZOOM-IN magnific POP UP
+-------------------------------------------------*/
+
+.my-mfp-zoom-in .galery-popup {
+	opacity: 0;
+
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out; 
+
+
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .galery-popup {
+	opacity: 1;
+
+	-webkit-transform: scale(1); 
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	transform: scale(1); 
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .galery-popup {
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+
+	opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.85;
+    background-color: black;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+/*-----------------------------------------------------------------------------
+    МЕДИА КОНТЕНТ
+-------------------------------------------------------------------------------*/
+/*Large devices Desktops */
+@media only screen and (min-width: 1200px){
+    #header {
+        min-height: 85vh;
+    }
+    .header-content {
+        padding-top: 15% 
+    }
+    .header-content h1 {
+        margin-top: 5%;
+    }
+}
+
+
+
+/*Medium devices */
+@media only screen and (min-width: 992px) and (max-width:1200px){
+    #header {
+        min-height: 90vh;
+    }
+    .header-content {
+        padding-top: 27% 
+    }
+    .header-content h1 {
+        margin-top: 0;
+    }
+    
+}
+
+
+/*Small devices Tablets */
+@media only screen and (min-width:768px) and (max-width:991px){
+    .phone {
+        padding-left: 8%;
+        display: block;
+        text-align: left;
+    }
+    .logo {
+        display: block;
+        text-align: left;
+    }
+    .header-content h1 {
+        margin-top: 5%;
+    }
+    #about {
+        padding-bottom: 0px;
+    }
+    #about p {
+        margin-bottom: 10%;
+    }
+    .discribe h2 {
+        font-size: 30px;
+    }
+    #characteristic {
+        min-height: 70vh;
+    }
+    .picture-size {
+        margin-left: 25%;
+    }
+    .display-character, .weight{
+        padding-left: 2%;
+    }
+    .comment-desc {
+        margin-bottom: 50px;
+    }
+    .work-img img {
+        width: 35%;
+    }
+    .top {
+        bottom: 70px;
+        right: 7px;
+    }
+    
+}
+
+
+/*Extra small devices */
+@media only screen and (max-width: 767px){
+    .phone {
+        display: block;
+        text-align: center;
+    }
+    .logo {
+        display: block;
+        text-align: center;
+    }
+    .header-content h1 {
+        font-size: 50px;
+    }
+    .header-content h1 span {
+    font-size: 20px;
+    }
+    .header-content p span {
+    font-size: 40px;
+    }
+    #about {
+        padding-bottom: 0px;
+    }
+    #about p {
+        margin-bottom: 10%;
+    }
+    .delivery {
+        margin-top: 15%;
+    }
+    .delivery img {
+        width: 40%;
+    }
+    .discribe h2 {
+        font-size: 30px;
+    }
+    .picture-size {
+        width: 300px;
+        height: 200px;
+    }
+    .size-a {
+        padding-left: 65px;
+        padding-top: 25px;
+        text-align: center;
+    }
+    .size-b {
+        padding-left: 260px;
+        top: 5px;
+        text-align: center;
+    }
+    .size-c {
+        bottom: 32px;
+        padding-left: 210px;
+        text-align: center;
+    }
+    .characteristic-header {
+        margin: 10% 0;
+    }
+    .characteristic-header h2 {
+        font-size: 30px;
+    }
+    .color-characteristic {
+        font-size: 30px;
+    }
+    .display-img img {
+        width: 80%;
+    }
+    .p-capasity {
+        font-size: 25px;
+    }
+    .work-img img {
+        width: 35%;
+    }
+    .comment-desc {
+        margin-bottom: 50px;
+    }
+    .top {
+        top: 10px;
+        right: 10px;
+    }
+}
+
